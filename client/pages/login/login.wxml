@@ -1,0 +1,24 @@
+<view class='container'>
+
+  <image class='login_image' src='../../res/ic_icon.jpg' />
+
+  <view class='login_input_container margin'>
+    <input class='login_input login_margin' placeholder='请输入你的登录名' />
+  </view>
+
+
+  <view class='login_input_container margin'>
+    <input class='login_input login_margin' password='true' placeholder='请输入你的密码' />
+  </view>
+
+  <button class='login_button margin'>登录</button>
+
+  <text class='login_lost_psw'>忘记密码</text>
+
+
+  <view class='text_register_container'>
+    <text class='text_register' bindtap='quickRegister'>快速注册</text>
+  </view>
+
+
+</view>

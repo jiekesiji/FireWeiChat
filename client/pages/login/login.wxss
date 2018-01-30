@@ -1,0 +1,61 @@
+/* pages/login/login.wxss */
+
+page {
+  height: 100%;
+  background: #303f9f;
+}
+
+.login_image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-top: 30%;
+}
+
+.login_input_container {
+  display: flex;
+  height: 40px;
+  width: 70%;
+  border-radius: 20px;
+  background: white;
+  align-items: center;
+}
+
+.margin {
+  margin-top: 10%;
+}
+
+.login_button {
+  height: 40px;
+  border-radius: 20px;
+  background: #448AFF;
+  font-size: 15px;
+  color: white;
+  width: 70%;
+}
+
+.login_lost_psw{
+  margin-top: 15px;
+  margin-left: 15%;
+  align-self: flex-start;
+  color: white;
+  font-size: 13px;
+}
+
+.login_input {
+  font-size: 13px;
+  margin-left: 20px;
+}
+
+.text_register {
+  color: white;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.text_register_container{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  flex-direction: column;
+}
