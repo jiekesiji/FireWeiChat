@@ -1,0 +1,39 @@
+
+page{
+  height: 100%;
+}
+.main_header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background: #4382EC;
+  height: 10%;
+}
+
+.main_header_search{
+  display: flex;
+  flex-direction: row;
+  margin-left:5%;
+  margin-right: 10%;
+  width: 48%;
+  border-radius: 20px;
+  height: 40%;
+  align-items: center;
+  margin-top:8%;
+  background: white;
+}
+
+.main_header_search_text{
+  color: #BDBDBD;
+  margin-left: 10px;
+  font-size: 13px;
+}
+
+.main_icon{
+  height: 40px;
+  width:40px;
+  align-self: flex-end;
+  margin-left: 2%;
+  border-radius: 50%;
+  margin-bottom: 2%;
+}

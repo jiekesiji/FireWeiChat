@@ -16,10 +16,10 @@ page {
 
 .register_header_back {
   position: absolute;
-  top: 14%;
+  top: 13.5%;
   left: 2%;
-  right: 88%;
-  bottom: 68%;
+  right: 90%;
+  bottom: 72%;
 }
 
 .register_header {
@@ -30,16 +30,17 @@ page {
   position: absolute;
   left: 30%;
   right: 30%;
-  top: 0%;
-  bottom: 0%;
+  top: 13.5%;
+  bottom: 72%;
   align-items: center;
+  justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
 .register_header_title {
-  margin-top: 18%;
   color: white;
+  font-size: 16px;
 }
 
 .register_header_img {
@@ -49,7 +50,7 @@ page {
   margin: 10%;
 }
 
-.register_item {
+ .register_item {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -58,28 +59,27 @@ page {
   align-items: center;
   border: 0.5px, solid, #dadcdb;
   margin-top: 3%;
-}
+} 
 
 .register_item_text {
   margin-left: 15px;
   font-size: 14px;
 }
 
-.register_item_inout {
+.register_item_input {
   margin-left: 15px;
   font-size: 14px;
 }
 
-.register_notice_container{
+ .register_notice_container{
   margin-top: 6%;
+  box-sizing: border-box;
   display: flex;
   width: 100%;
   height: 5%; 
-  flex-direction: row;
-  padding: 15px;
-  margin-left: 15px;
+  padding-left: 15px;
   align-items: center;
-}
+} 
 
 
 .register_submit{

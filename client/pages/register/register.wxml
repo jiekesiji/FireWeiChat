@@ -3,40 +3,40 @@
   <!-- 注册界面的头文件 -->
   <view class='register_header_container'>
     <image src='../../res/ic_register.png' />
-    <view class='register_header_back'>
+     <view class='register_header_back' bindtap='onBackPress'>
       <image src='../../res/ic_back.png' />
     </view>
     <view class='register_header_info_container'>
       <text class='register_header_title'>快速注册</text>
-    </view>
+    </view> 
   </view>
 
   <!-- 注册界面的主体 -->
   <view class='register_item'>
     <text class='register_item_text'>手    机    号</text>
-    <input class='register_item_inout' placeholder='请输入手机号'/>
+    <input class='register_item_input' placeholder='请输入手机号'/>
   </view>
 
   <view class='register_item'>
     <text class='register_item_text'>用 户    名</text>
-    <input class='register_item_inout' placeholder='请输入用户名'/>
+    <input class='register_item_input' placeholder='请输入用户名'/>
   </view>
 
 
 <view class='register_item'>
     <text class='register_item_text'>创建密码</text>
-    <input class='register_item_inout' placeholder='请输入创建密码'/>
+    <input class='register_item_input' placeholder='请输入创建密码'/>
   </view>
 
 
 <view class='register_item'>
     <text class='register_item_text'>再次输入</text>
-    <input class='register_item_inout' placeholder='请再次输入'/>
+    <input class='register_item_input' placeholder='请再次输入'/>
 </view>
 
 <view class='register_item'>
     <text class='register_item_text'>验    证    码</text>
-    <input class='register_item_inout' placeholder='请输入验证码'/>
+    <input class='register_item_input' placeholder='请输入验证码'/>
 </view>
 
 

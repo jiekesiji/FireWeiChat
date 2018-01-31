@@ -1,0 +1,9 @@
+<!--pages/main/main.wxml-->
+<view class='container'>
+  <view class='main_header'>
+  <image src='../../res/ic_icon.jpg' class='main_icon'/>
+    <view class='main_header_search'>
+      <text class='main_header_search_text'>请输入搜索内容</text>
+    </view>
+  </view>
+</view>
