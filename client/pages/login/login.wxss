@@ -2,7 +2,7 @@
 
 page {
   height: 100%;
-  background: #303f9f;
+  background:#1976D2;
 }
 
 .login_image {

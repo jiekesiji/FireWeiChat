@@ -1,2 +1,56 @@
-<!--pages/register/register.wxml-->
-<text>pages/register/register.wxml</text>
+<view class='container'>
+
+  <!-- 注册界面的头文件 -->
+  <view class='register_header_container'>
+    <image src='../../res/ic_register.png' />
+    <view class='register_header_back'>
+      <image src='../../res/ic_back.png' />
+    </view>
+    <view class='register_header_info_container'>
+      <text class='register_header_title'>快速注册</text>
+    </view>
+  </view>
+
+  <!-- 注册界面的主体 -->
+  <view class='register_item'>
+    <text class='register_item_text'>手    机    号</text>
+    <input class='register_item_inout' placeholder='请输入手机号'/>
+  </view>
+
+  <view class='register_item'>
+    <text class='register_item_text'>用 户    名</text>
+    <input class='register_item_inout' placeholder='请输入用户名'/>
+  </view>
+
+
+<view class='register_item'>
+    <text class='register_item_text'>创建密码</text>
+    <input class='register_item_inout' placeholder='请输入创建密码'/>
+  </view>
+
+
+<view class='register_item'>
+    <text class='register_item_text'>再次输入</text>
+    <input class='register_item_inout' placeholder='请再次输入'/>
+</view>
+
+<view class='register_item'>
+    <text class='register_item_text'>验    证    码</text>
+    <input class='register_item_inout' placeholder='请输入验证码'/>
+</view>
+
+
+<view class='register_notice_container'>
+  <checkbox color='#A6CA78' style='font-size:14px'>
+  已阅读并同意<text style = "color:#84AD62">《软件许可及服务协议》</text>
+  </checkbox>
+</view>
+
+<view class='register_submit'>
+    <button class='register_submit_button'>提交</button>
+</view>
+
+
+
+
+</view>
