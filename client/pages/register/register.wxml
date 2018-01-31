@@ -1,54 +1,63 @@
 <view class='container'>
 
-  <!-- 注册界面的头文件 -->
-  <view class='register_header_container'>
-    <image src='../../res/ic_register.png' />
-     <view class='register_header_back' bindtap='onBackPress'>
-      <image src='../../res/ic_back.png' />
-    </view>
-    <view class='register_header_info_container'>
-      <text class='register_header_title'>快速注册</text>
-    </view> 
-  </view>
+  <form bindsubmit='register' class='register_form'>
+    <view class='register_form_container'>
+      <!-- 注册界面的头文件 -->
+      <view class='register_header_container'>
+        <image src='../../res/ic_register.png' />
+        <view class='register_header_back' bindtap='onBackPress'>
+          <image src='../../res/ic_back.png' />
+        </view>
+        <view class='register_header_info_container'>
+          <text class='register_header_title'>快速注册</text>
+        </view>
+      </view>
 
-  <!-- 注册界面的主体 -->
-  <view class='register_item'>
-    <text class='register_item_text'>手    机    号</text>
-    <input class='register_item_input' placeholder='请输入手机号'/>
-  </view>
+      <!-- 注册界面的主体 -->
+      <view class='register_item'>
+        <text class='register_item_text'>手    机    号</text>
+        <input class='register_item_input' name='telNum' placeholder='请输入手机号' />
+      </view>
 
-  <view class='register_item'>
-    <text class='register_item_text'>用 户    名</text>
-    <input class='register_item_input' placeholder='请输入用户名'/>
-  </view>
-
-
-<view class='register_item'>
-    <text class='register_item_text'>创建密码</text>
-    <input class='register_item_input' placeholder='请输入创建密码'/>
-  </view>
+      <view class='register_item'>
+        <text class='register_item_text'>用 户    名</text>
+        <input class='register_item_input' name='nickName' placeholder='请输入用户名' />
+      </view>
 
 
-<view class='register_item'>
-    <text class='register_item_text'>再次输入</text>
-    <input class='register_item_input' placeholder='请再次输入'/>
-</view>
+      <view class='register_item'>
+        <text class='register_item_text'>创建密码</text>
+        <input class='register_item_input' password='true' name='firstPsw' placeholder='请输入创建密码' />
+      </view>
 
-<view class='register_item'>
+
+      <view class='register_item'>
+        <text class='register_item_text'>再次输入</text>
+        <input class='register_item_input' password='true' name='secondPsw' placeholder='请再次输入' />
+      </view>
+
+      <!-- <view class='register_item'>
     <text class='register_item_text'>验    证    码</text>
     <input class='register_item_input' placeholder='请输入验证码'/>
-</view>
+</view> -->
 
 
-<view class='register_notice_container'>
-  <checkbox color='#A6CA78' style='font-size:14px'>
-  已阅读并同意<text style = "color:#84AD62">《软件许可及服务协议》</text>
-  </checkbox>
-</view>
+      <view class='register_notice_container'>
+        <checkbox-group bindchange='checkboxChange'>
+          <checkbox color='#A6CA78' style='font-size:14px' value='aggreeCheck'>
+            已阅读并同意
+            <text style="color:#84AD62">《软件许可及服务协议》</text>
+          </checkbox>
+        </checkbox-group>
+      </view>
 
-<view class='register_submit'>
-    <button class='register_submit_button'>提交</button>
-</view>
+      <view class='register_submit' >
+        <button class='register_submit_button' form-type='submit' wx:if="{{checkBoxChecked}}" style='background:#4282EC' >提交</button>
+        <button class='register_submit_button' form-type='submit' wx:else style='background:#6397ED' disabled='true'>提交</button>
+      </view>
+    </view>
+
+  </form>
 
 
 

@@ -28,6 +28,12 @@ var showSuccess = text => wx.showToast({
     icon: 'success'
 })
 
+// 显示警告提示
+var showWarn = text => wx.showToast({
+  title: text,
+  image:'../../res/ic_warn.png'
+})
+
 // 显示失败提示
 var showModel = (title, content) => {
     wx.hideToast();
@@ -39,4 +45,4 @@ var showModel = (title, content) => {
     })
 }
 
-module.exports = { formatTime, showBusy, showSuccess, showModel }
+module.exports = { formatTime, showBusy, showWarn, showSuccess, showModel }
