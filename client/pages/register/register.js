@@ -1,7 +1,7 @@
 // pages/register/register.js
-var qcloud = require('../../vendor/wafer2-client-sdk/index')
 var config = require('../../config')
 var util = require('../../utils/util.js')
+var requestUtil = require('../../utils/requestUtil.js')
 
 Page({
 
@@ -9,7 +9,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-      checkBoxChecked:false,
+    checkBoxChecked: false,
   },
 
   /**
@@ -110,21 +110,13 @@ Page({
       return;
     }
 
-    util.showBusy('请求中...')
-    qcloud.request({
-      url: config.service.registerUrl,
-      method:'POST',
-      header: {
-        'content-type': 'application/x-www-form-urlencoded'
-      },
-      data: value,
-      success(reslut){
-
-      },
-      fail(error){
-
+    util.showBusy('请求中...');
+    requestUtil.postRequest(value, config.service.registerUrl,
+      function (result) {
+        console.log("请求成功",result);
+      }, function (error) {
+        console.log("请求出错", error);
       }
-    });
-
+    );
   }
 })
